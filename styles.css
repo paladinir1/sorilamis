@@ -1,7 +1,7 @@
 :root{
     --dark:#121C28;
     --bright:#fff;
-    --red:#ff006e;
+    --red:#ff0000;
     --green:#209162;
     --yellow: #e4ef4a;
     --grey: #a4a4a4;
@@ -9,7 +9,7 @@
 }
 
 body{
-    background-color: white;
+    background-image: url(photo_0.jpeg);
 }
 
 
@@ -21,34 +21,43 @@ body{
     left:0;
     font-family:  'Playfair Display', serif;;
     padding: 0 5%;
+    display: flex;
+    flex-direction: row;
+    color: var(--bright);
 }
 
 .navbar{
+    width: 100%;
     display: flex;
     flex-direction: row;
 }
 
 .navbar a{
+    /* background-color: var(--grey); */
     display: block;
     margin: auto;
     text-align: center;
     text-decoration: none;
-    color: black;
+    color: var(--bright);
     font-size: 1.2em;
 }
 
 .navbar a:hover{
-
+    color: #e7b52a;
 }
 
 /* Animation */
 #gradient-canvas {
     width:100%;
     height:100%;
-    --gradient-color-1: var(--yellow); 
+    --gradient-color-1: var(--red); 
+    --gradient-color-2: var(--yellow);  
+    --gradient-color-3: var(--dark);
+    --gradient-color-4: var(--dark); 
+    /* --gradient-color-1: var(--yellow); 
     --gradient-color-2: var(--orange);  
     --gradient-color-3: var(--bright);
-    --gradient-color-4: var(--bright); 
+    --gradient-color-4: var(--bright);  */
     z-index:0;
     opacity: 0.9;
     transform: rotate(180);
