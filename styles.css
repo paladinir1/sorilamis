@@ -10,6 +10,7 @@
 
 body{
     color: var(--bright);
+    font-family:  'Playfair Display', serif;
 }
 
 .container{
@@ -23,7 +24,6 @@ body{
     position: absolute;
     top: 0;
     left:0;
-    font-family:  'Playfair Display', serif;;
     padding: 0 5%;
     display: flex;
     flex-direction: row;
@@ -48,10 +48,6 @@ body{
 
 .navbar a:hover{
     color: #e7b52a;
-}
-
-main{
-    overflow-y: scroll;
 }
 
 .row1{
@@ -103,7 +99,7 @@ main{
     --gradient-color-2: var(--yellow);  
     --gradient-color-3: var(--dark);
     --gradient-color-4: var(--dark); 
-    z-index:0;
+    z-index:-1;
     opacity: 0.9;
     transform: rotate(90);
 }
