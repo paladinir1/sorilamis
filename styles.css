@@ -12,7 +12,22 @@ body{
     /* background-image: url(photo_0.jpeg); */
 }
 
+.container{
+    z-index: 2;
+    position: absolute;
+    padding-top: 150px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
 
+main img{
+    width: 400px;
+    margin: auto;
+    display: block;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
 
 .header{
     width: 100%;
@@ -40,6 +55,7 @@ body{
     text-decoration: none;
     color: var(--bright);
     font-size: 1.2em;
+    transition: .2s;
 }
 
 .navbar a:hover{
