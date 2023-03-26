@@ -2,31 +2,20 @@
     --dark:#121C28;
     --bright:#fff;
     --red:#ff0000;
-    --green:#209162;
+    --green:#07250a;
     --yellow: #e4ef4a;
     --grey: #a4a4a4;
     --orange: #e7b52a;
 }
 
 body{
-    /* background-image: url(photo_0.jpeg); */
+    color: var(--bright);
 }
 
 .container{
     z-index: 2;
-    position: absolute;
     padding-top: 150px;
     width: 100%;
-    top: 0;
-    left: 0;
-}
-
-main img{
-    width: 400px;
-    margin: auto;
-    display: block;
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(5px 5px 5px #222);
 }
 
 .header{
@@ -48,7 +37,6 @@ main img{
 }
 
 .navbar a{
-    /* background-color: var(--grey); */
     display: block;
     margin: auto;
     text-align: center;
@@ -62,18 +50,59 @@ main img{
     color: #e7b52a;
 }
 
+main{
+    overflow-y: scroll;
+}
+
+.row1{
+    text-align: center;
+    color: var(--bright);
+}
+
+.row1 img{
+    width: 400px;
+    margin: auto;
+    display: block;
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+
+.row.products{
+    width:100%;
+}
+
+
+.square{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.square .square_row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.square  .square_row .square_cell{
+    background-color: #209162;
+    border: 2px solid black;
+    width: 50%;
+    height: 100px;
+}
+
+
+
 /* Animation */
 #gradient-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
     width:100%;
     height:100%;
     --gradient-color-1: var(--red); 
     --gradient-color-2: var(--yellow);  
     --gradient-color-3: var(--dark);
     --gradient-color-4: var(--dark); 
-    /* --gradient-color-1: var(--yellow); 
-    --gradient-color-2: var(--orange);  
-    --gradient-color-3: var(--bright);
-    --gradient-color-4: var(--bright);  */
     z-index:0;
     opacity: 0.9;
     transform: rotate(90);
