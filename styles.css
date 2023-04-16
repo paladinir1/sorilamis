@@ -1,7 +1,7 @@
 /* Set up */
 :root{
     --dark:#121C28;
-    --bright:#fff;
+    --bright:#dfe9ba;
     --red:#ff0000;
     --green:#07250a;
     --yellow: #e4ef4a;
@@ -14,6 +14,8 @@ html,body {
     width:100%;
     height:100%;
     overflow:hidden;
+    background-color: rgba(0,0,0,0.7);
+    font-family: 'Playfair Display', serif;
 }
 
 /* Animation */
@@ -28,7 +30,7 @@ html,body {
     --gradient-color-3: var(--dark);
     --gradient-color-4: var(--dark); 
     z-index:-1;
-    opacity: 0.9;
+    opacity: 0.75;
     transform: rotate(90);
 }
 
