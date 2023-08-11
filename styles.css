@@ -105,5 +105,13 @@ html,body {
     height: 100px;
 }
 
+@media only screen and (max-width: 600px) {
+    .header .navbar a{
+        font-size: 85% !important;
+    }
+    .header{
+        width: 90% !important;
+    }
+  }
 
 
