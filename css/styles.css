@@ -1,0 +1,150 @@
+/* Set up */
+:root{
+    --dark:#061628;
+    --bright:#dfe9ba;
+    --brown:#bb9c70;
+    --green:#07250a;
+    --yellow: #e4ef4a;
+    --grey: #a4a4a4;
+    --orange: #e7b52a;
+}
+html,body {
+    margin:0;
+    padding:0;
+    width:100%;
+    min-height:100vh !important;
+    background-color: rgba(0,0,0,0);
+    color: var(--dark);
+    font-family: 'Roboto Slab', serif;
+}
+
+/* Animation */
+#gradient-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    --gradient-color-1: var(--bright); 
+    --gradient-color-2: var(--yellow);  
+    --gradient-color-3: var(--bright);
+    --gradient-color-4: var(--brown); 
+    z-index:-1;
+    opacity: 0.75;
+    transform: rotate(90);
+    min-height:100% !important;
+}
+
+/* Text */
+.logo{
+    font-family: 'Playfair Display', serif;
+}
+.row .logo{
+    color: var(--dark);
+}
+
+/* Content */
+.container{
+    z-index: 2;
+    padding-top: 86px;
+    width: 100%;
+}
+
+.header{
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    top: 0;
+    left:0;
+    height: 86px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--dark);
+    color: var(--bright);
+}
+.header .logo{
+    width: 33.33%;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.navbar a{
+    display: block;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    color: var(--bright);
+    font-size: 1.2em;
+    transition: .2s;
+}
+.navbar a:hover{
+    color: #e7b52a;
+}
+.nav_selected{
+    text-decoration: underline !important;
+}
+
+.row{
+    text-align: center;
+}
+.row p{
+    padding: 0 5%;
+}
+
+.home .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.home .row img{
+    width: 33.33%;
+}
+
+.about h1.logo{
+    text-align: center;
+    font-size: 3em !important;
+}
+.about .row{
+    display: flex;
+    min-height: 70vh;
+    padding: 20px;
+}
+.about .row p{
+    font-size: 2em;
+    margin: auto;
+}
+.about .row img{
+    width: 30%;
+    height: 30%;
+    margin: auto;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+}
+.about .row2{
+    flex-direction: row-reverse;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--dark);
+    color: var(--bright);
+    padding: 20px;
+}
+
+/* Mobile */
+@media only screen and (max-width: 600px) {
+    .header .navbar{
+        font-size: 85% !important;
+    }
+    .home .row img{
+        width: 50% !important;
+    }
+    .about .row{
+        flex-direction: column;
+    }
+  }
+
+
