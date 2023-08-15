@@ -1,12 +1,13 @@
 /* Set up */
 :root{
-    --dark:#061628;
+    --dark:#0E0A0E;
     --bright:#dfe9ba;
     --red:#590000;
     --green:#07250a;
-    --yellow: #e4ef4a;
+    --yellow: #FEF7D2;
     --grey: #a4a4a4;
     --orange: #e7b52a;
+    --blue: #8FB2E0;
 }
 html,body {
     margin:0;
@@ -25,8 +26,8 @@ html,body {
     left: 0;
     width:100%;
     --gradient-color-1: var(--dark); 
-    --gradient-color-2: var(--yellow);  
-    --gradient-color-3: var(--brown);
+    --gradient-color-2: var(--blue);  
+    --gradient-color-3: var(--yellow);
     --gradient-color-4: var(--red); 
     z-index:-1;
     opacity: 1;
@@ -51,7 +52,10 @@ html,body {
 }
 
 main{
-    background-color: rgba(255,255,255,0.8);
+    /* background-color: rgba(255,255,255,0.8); */
+    min-height: 100vh;
+
+    background-color: rgba(255,255,255,1);
 }
 
 .header{
@@ -104,9 +108,17 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    min-height: 100vh;
 }
 .home .row img{
-    width: 33.33%;
+    width: 500px;
+    margin: auto;
+    /* fill-opacity: .6;
+    border-top: 120px solid #aaaaaa ;
+    border-bottom: 120px solid #aaaaaa ;
+    border-left: 20px solid #aaaaaa ;
+    border-right: 20px solid #aaaaaa ;
+    border-radius: 3px; */
 }
 
 .about h1.logo{
@@ -129,6 +141,9 @@ main{
     height: 30%;
     margin: auto;
     box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+
+}
+.about .row1{
 }
 .about .row2{
     flex-direction: row-reverse;
