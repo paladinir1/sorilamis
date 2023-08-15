@@ -118,6 +118,9 @@ main{
 .home .row img{
     width: 500px;
     margin: auto;
+    -webkit-filter: drop-shadow(0px 5px 5px #222222);
+    filter: drop-shadow(0px 5px 5px #222222);
+    /* box-shadow: 0px 0px 5px 10px rgba(0,0,0,0.2); */
     /* fill-opacity: .6;
     border-top: 120px solid #aaaaaa ;
     border-bottom: 120px solid #aaaaaa ;
@@ -178,7 +181,7 @@ footer{
         width: 50%;
     }
     .home .row img{
-        width: 50% !important;
+        width: 100% !important;
     }
     .about .row{
         flex-direction: column;
