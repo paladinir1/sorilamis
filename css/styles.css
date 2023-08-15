@@ -60,6 +60,7 @@ main{
 }
 
 .header{
+    z-index: 2;
     transition: .5s;
     width: 100%;
     position: fixed;
@@ -147,7 +148,11 @@ main{
     padding: 20px;
 }
 .about .row p{
-    font-size: 2em;
+    font-size: 1.7em;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+    f
+    text-align: justify;
     margin: auto;
 }
 .about .row img{
@@ -182,6 +187,11 @@ footer{
     }
     .home .row img{
         width: 100% !important;
+    }
+    .home .row2{
+        min-height: calc(100vh - 350px);
+        padding: 50px 0 0 ;
+        justify-content: space-around;
     }
     .about .row{
         flex-direction: column;
