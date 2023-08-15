@@ -48,20 +48,22 @@ html,body {
     z-index: 2;
     padding-top: 86px;
     width: 100%;
-    background-color: rgba(0,0,0,0.4);
+    /* background-color: rgba(0,0,0,0.4); */
+
+    background-color: rgba(255,255,255,.75);
 }
 
 main{
     /* background-color: rgba(255,255,255,0.8); */
     min-height: 100vh;
 
-    background-color: rgba(255,255,255,1);
 }
 
 .header{
+    transition: .5s;
     width: 100%;
     position: fixed;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    /* box-shadow: 0 5px 15px rgba(0,0,0,0.4); */
     top: 0;
     left:0;
     height: 86px;
@@ -69,8 +71,8 @@ main{
     text-align: center;
     display: flex;
     flex-direction: row;
-    background-color: rgba(0,0,0,0.4);
-    color: var(--bright);
+    background-color: rgba(255,255,255,0);
+    color: var(--dark);
 }
 .header .logo{
     width: 33.33%;
@@ -80,12 +82,15 @@ main{
     display: flex;
     flex-direction: row;
 }
+.navbar h1{
+    
+}
 .navbar a{
     display: block;
     margin: auto;
     text-align: center;
+    color: var(--dark);
     text-decoration: none;
-    color: var(--bright);
     font-size: 1.2em;
     transition: .2s;
 }
@@ -104,7 +109,7 @@ main{
 }
 
 
-.home .row{
+.home .row1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -120,6 +125,12 @@ main{
     border-right: 20px solid #aaaaaa ;
     border-radius: 3px; */
 }
+.home .row2{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 75px 0 250px;
+    font-size: 1.3em;
+}
+
 
 .about h1.logo{
     text-align: center;
