@@ -171,7 +171,11 @@ footer{
 /* Mobile */
 @media only screen and (max-width: 600px) {
     .header .navbar{
-        font-size: 85% !important;
+        font-size: 65% !important;
+        width: 50%;
+    }
+    #header h1{
+        width: 50%;
     }
     .home .row img{
         width: 50% !important;
